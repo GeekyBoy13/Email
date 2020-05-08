@@ -16,12 +16,14 @@ def change(x):
     x = iterate(x, "*", "[*]")
     x = iterate(x, "+", "[+]")
     return x
-    
+
+# Get information from user, When asked for message, type STOP in all caps to end the message.
 x= input('What email are you using?  ')
 sender_email = choose(x)
 receiver_email = input('Who are you sending it to?  ')
 password = getpass.getpass(prompt = 'What is your password?  ')
 subject = input('What is the subject?  ')
+print('Type your message here:')
 lines = []
 while True:
     line = input()
