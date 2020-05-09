@@ -23,7 +23,7 @@ sender_email = choose(x)
 receiver_email = input('Who are you sending it to?  ')
 password = getpass.getpass(prompt = 'What is your password?  ')
 subject = input('What is the subject?  ')
-print('Type your message here:')
+print('\nType your message here:\n')
 lines = []
 while True:
     line = input()
